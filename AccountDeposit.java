@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class AccountDeposit{
     public static void main(String [] args){
         java.util.Scanner input = new java.util.Scanner(System.in);
@@ -32,6 +34,8 @@ public class AccountDeposit{
                 System.out.println();
 
                 // display the changed and unchanged accounts
+                String message = String.format("The current amount on the Centenary Account is : UGX %.2f\n\n" , centenaryAccount.getBalance());
+                JOptionPane.showMessageDialog(null , message);
                 System.out.printf("The current amount on the Centenary Account is : UGX %.2f\n\n" , centenaryAccount.getBalance());
                 System.out.printf("The current amount on the Stanbic Account is : UGX %.2f\n\n" , stanbicAccount.getBalance());
                 System.out.printf("The current amount on the DFCU Account is : UGX %.2f\n\n" , dfcuAccount.getBalance());
@@ -48,6 +52,8 @@ public class AccountDeposit{
                 System.out.println();
 
                  // display the changed and unchanged accounts
+                message = String.format("The current amount on the Centenary Account is : UGX %.2f\n\n" , stanbicAccount.getBalance());
+                JOptionPane.showMessageDialog(null , message);
                 System.out.printf("The current amount on the Centenary Account is : UGX %.2f\n\n" , centenaryAccount.getBalance());
                 System.out.printf("The current amount on the Stanbic Account is : UGX %.2f\n\n" , stanbicAccount.getBalance());
                 System.out.printf("The current amount on the DFCU Account is : UGX %.2f\n\n" , dfcuAccount.getBalance());
@@ -64,6 +70,8 @@ public class AccountDeposit{
                 System.out.println();
 
                  // display the changed and unchanged accounts
+                message = String.format("The current amount on the Centenary Account is : UGX %.2f\n\n" , dfcuAccount.getBalance());
+                JOptionPane.showMessageDialog(null , message);
                 System.out.printf("The current amount on the Centenary Account is : UGX %.2f\n\n" , centenaryAccount.getBalance());
                 System.out.printf("The current amount on the Stanbic Account is : UGX %.2f\n\n" , stanbicAccount.getBalance());
                 System.out.printf("The current amount on the DFCU Account is : UGX %.2f\n\n" , dfcuAccount.getBalance());
@@ -80,6 +88,8 @@ public class AccountDeposit{
                 System.out.println();
 
                  // display the changed and unchanged accounts
+                message = String.format("The current amount on the Centenary Account is : UGX %.2f\n\n" , cairoAccount.getBalance());
+                JOptionPane.showMessageDialog(null , message);
                 System.out.printf("The current amount on the Centenary Account is : UGX %.2f\n\n" , centenaryAccount.getBalance());
                 System.out.printf("The current amount on the Stanbic Account is : UGX %.2f\n\n" , stanbicAccount.getBalance());
                 System.out.printf("The current amount on the DFCU Account is : UGX %.2f\n\n" , dfcuAccount.getBalance());
